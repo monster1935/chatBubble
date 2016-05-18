@@ -3,4 +3,4 @@
 本示例使用原生JavaScript以及css完成一个聊天界面消息气泡形式的展现。
 
 
-![Demo演示](http://monster1935.github.io/chatBubble)
+Demo演示：[聊天气泡展示](monster1935.github.io/chatBubble)
