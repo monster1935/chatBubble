@@ -147,7 +147,9 @@
 			
 			//展示相关内容
 			_displayNewMsg(msg,"send");
-			_displayNewMsg(chatMsg[EventUtil.random(0,chatMsg.length-1)],"receive");
+			setTimeout(function(){
+				_displayNewMsg(chatMsg[EventUtil.random(0,chatMsg.length-1)],"receive");
+			},1000);
 			//清除发送框中的内容。
 			messageInput.innerHTML="";
 		}else{
