@@ -150,6 +150,8 @@
 			_displayNewMsg(chatMsg[EventUtil.random(0,chatMsg.length-1)],"receive");
 			//清除发送框中的内容。
 			messageInput.innerHTML="";
+		}else{
+			_showWarning();
 		}
 	}
 	function onSendImageChange(){}
@@ -244,6 +246,12 @@
 		    };
 		};
 		return result;
+	}
+	function _showWarning(){
+		//弹出消息框，提示发送的消息不能为空
+		var warning = document.getElementById('warning');
+		warning.style.display = 'block';
+		setTimeout("warning.style.display = 'none';",'1500');
 	}
 
 
