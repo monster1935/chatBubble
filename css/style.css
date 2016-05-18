@@ -1,0 +1,301 @@
+html, body {
+    margin: 0;
+    background-color: #efefef;
+    font-family: sans-serif;
+}
+#header{
+    position: absolute;
+    z-index: 100;
+    height: 40px;
+    width: 100%;
+    background: #000 20px center url("../images/small-logo.png") no-repeat;
+}
+#header span{
+    color:#ffffff;
+    float:left;
+    font-weight:bold;
+    margin-top:13px;
+    margin-left:60px;
+}
+.banner{
+    height:20px;
+}
+/* 聊天窗口样式 */
+.wrapper{
+	position: absolute;
+	width:600px;
+	height:600px;
+	top:50%;
+	left:50%;
+	margin-left: -300px;
+	margin-top:-280px;
+	border-radius: 5px;
+	background-color:#B0C4DE;
+}
+
+/* 聊天消息展示区样式 */
+#history{
+	height:57%;
+	overflow: auto;
+    overflow-x:hidden; 
+	background-color:#fff;
+	padding:5px;
+	margin:5px; 
+
+}
+.control{
+	position: relative;
+	height:40px;
+	background-color:transparent;
+}
+
+/* 控制按钮样式 */
+.emoji{
+	float:left;
+	cursor: pointer;
+	margin-left:10px;
+	width:5px;
+    border:0px;
+    padding: .5em 1.5em .3em;
+    background:url(../images/emotion1.png) no-repeat center center ;
+}
+.emoji:hover {
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .3em; 
+    -moz-border-radius: .3em;
+    border-radius: .3em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    background:url(../images/emotion1.png) no-repeat center ;
+}
+.emoji:active {
+	
+    background:url(../images/emotion1.png) no-repeat center ;
+
+}
+/* .emoji:focus{
+	background:url(../images/emotion1.png) no-repeat center ;
+} */
+
+/* 图片按钮 */
+.image{
+	float:left;
+	cursor: pointer;
+	width:5px;
+    border:0px;
+    padding: .5em 1.5em .3em;
+	background:url(../images/picture1.png) no-repeat center center ;
+}
+.image:hover{
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .3em; 
+    -moz-border-radius: .3em;
+    border-radius: .3em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    background:url(../images/picture1.png) no-repeat center ;
+}
+.image:active{
+	
+	background:url(../images/picture1.png) no-repeat center ;
+}
+
+.imageLabel{
+	position: relative;
+}
+#sendImage {
+    position: absolute;
+    width:40px;
+    cursor:pointer;
+    opacity: 0;
+    margin-left:-40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.fileLabel{
+	position:relative;
+}
+#sendFile{
+	position: absolute;
+    width:40px;
+    cursor:pointer;
+    opacity: 0;
+    margin-left:-40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.file{
+	float:left;
+	cursor: pointer;
+	width:5px;
+    border:0px;
+    padding: .5em 1.5em .3em;
+	background:url(../images/file1.png) no-repeat center center ;
+}
+.file:hover{
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .3em; 
+    -moz-border-radius: .3em;
+    border-radius: .3em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    background:url(../images/file1.png) no-repeat center ;
+}
+.file:active{
+	 background:url(../images/file1.png) no-repeat center ;	
+}
+.clear{
+	float:left;
+	cursor: pointer;
+	width:5px;
+    border:0px;
+    padding: .5em 1.5em .3em;
+	background:url(../images/clear1.png) no-repeat center center ;
+}
+.clear:hover{
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .3em; 
+    -moz-border-radius: .3em;
+    border-radius: .3em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    background:url(../images/clear1.png) no-repeat center ;
+}
+.clear:active{ background:url(../images/clear1.png) no-repeat center ;}
+input #chatLog:{
+	float:left;
+	padding: .5em 1.5em .3em;
+	overflow: hidden;
+}
+#messageInput{
+	height:110px;
+	max-height: 110px;
+	font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+	font-size:14px;
+	margin:5px;
+	overflow:auto;
+	background-color: #fff;
+	cursor:text;
+
+}
+ #sendBtn,#closeBtn {
+    float:right;
+ 	margin-top:10px;
+    margin-right: 10px;
+}
+
+/* 表情区 */
+#emojiWrapper {
+    display: none;
+    width: 400px;
+    position: absolute;
+    bottom: 200px;
+    left: -150px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #555;
+
+}
+#emojiWrapper img {
+    margin: 2px;
+    padding: 1px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border:1px #fff solid;
+}
+
+#emojiWrapper img:hover {
+    border:1px #0066cc solid;
+}
+
+/* 消息展示样式 */
+.time{
+	color:#778899;
+    text-align: center;
+    font-size:12px;
+}
+.send{
+	float: right;
+    display: inline-block;
+    font-size: 14px;
+    font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+    background:#80CFE2;
+    border-radius:5px;
+    max-width: 300px;
+    min-width: 20px;
+    padding:7px;
+    margin:10px -30px 10px 0px;
+    /*添加阴影效果*/
+    -moz-box-shadow:3px 3px 2px hsla(0, 0%, 0%, 0.3);  
+    -webkit-box-shadow:3px 3px 2px hsla(0, 0%, 0%, 0.3);  
+    box-shadow:-3px 3px 2px hsla(0, 0%, 0%, 0.3);
+
+}
+.receive{
+	display:inline-block;
+	background:#4D90FE;
+	color:#FFF;
+	font-size: 14px;
+	font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+	min-width: 20px;
+	/*
+	为消息框添加阴影
+	 */
+	-moz-box-shadow:3px 3px 2px hsla(0, 0%, 0%, 0.3);  
+	-webkit-box-shadow:3px 3px 2px hsla(0, 0%, 0%, 0.3);  
+	box-shadow:3px 3px 2px hsla(0, 0%, 0%, 0.3);
+	border-radius:5px;
+	padding:7px;
+	max-width: 300px;
+	margin:10px 5px 10px -30px;
+}
+
+.arrowRight{
+	display: inline-block;
+    float:right;
+    width:0;
+    height:0;
+    font-size:0;
+    margin-top:10px;
+    margin-right:-40px;
+    border:solid 10px;
+    border-width:10px 40px 10px 40px;
+    border-color:transparent transparent transparent #80CFE2;
+}
+.arrowLeft{
+	display: inline-block;
+    width:0;
+    height:0;
+    float:left;
+    margin-left:-38px; 
+    margin-top:15px;
+    border:solid 10px;
+    border-width:10px 40px 10px 40px;
+    border-color:transparent #4D90FE transparent transparent;
+}
+
+.clearfloat{
+	clear:both;
+}
+.imgRight{
+	width:40px;
+    height:40px;
+    display: inline-block;
+    float: right;
+    background:url(../images/2.jpg) no-repeat;
+    margin-right:10px;
+    margin-top:5px;
+}
+.imgLeft{
+    width: 40px;
+    height:40px;
+    display:inline-block;
+    float:left;
+    background:url(../images/1.png) no-repeat;
+    margin-left:10px;
+    margin-top:10px;
+}
