@@ -22,39 +22,39 @@ html, body {
 }
 /* 聊天窗口样式 */
 .wrapper{
-	position: absolute;
-	width:600px;
-	height:600px;
-	top:50%;
-	left:50%;
-	margin-left: -300px;
-	margin-top:-280px;
-	border-radius: 5px;
-	background-color:#B0C4DE;
+    position: absolute;
+    width:600px;
+    height:600px;
+    top:50%;
+    left:50%;
+    margin-left: -300px;
+    margin-top:-280px;
+    border-radius: 5px;
+    background-color:#B0C4DE;
 }
 
 /* 聊天消息展示区样式 */
 #history{
-	height:57%;
-	overflow: auto;
+    height:57%;
+    overflow: auto;
     overflow-x:hidden; 
-	background-color:#fff;
-	padding:5px;
-	margin:5px; 
+    background-color:#fff;
+    padding:5px;
+    margin:5px; 
 
 }
 .control{
-	position: relative;
-	height:40px;
-	background-color:transparent;
+    position: relative;
+    height:40px;
+    background-color:transparent;
 }
 
 /* 控制按钮样式 */
 .emoji{
-	float:left;
-	cursor: pointer;
-	margin-left:10px;
-	width:5px;
+    /*float:left;*/
+    cursor: pointer;
+    margin-left:10px;
+    width:5px;
     border:0px;
     padding: .5em 1.5em .3em;
     background:url(../images/emotion1.png) no-repeat center center ;
@@ -70,25 +70,25 @@ html, body {
     background:url(../images/emotion1.png) no-repeat center ;
 }
 .emoji:active {
-	
+    
     background:url(../images/emotion1.png) no-repeat center ;
 
 }
 /* .emoji:focus{
-	background:url(../images/emotion1.png) no-repeat center ;
+    background:url(../images/emotion1.png) no-repeat center ;
 } */
 
 /* 图片按钮 */
 .image{
-	float:left;
-	cursor: pointer;
-	width:5px;
+    /*float:left;*/
+    cursor: pointer;
+    width:5px;
     border:0px;
     padding: .5em 1.5em .3em;
-	background:url(../images/picture1.png) no-repeat center center ;
+    background:url(../images/picture1.png) no-repeat center center ;
 }
 .image:hover{
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
     -webkit-border-radius: .3em; 
     -moz-border-radius: .3em;
     border-radius: .3em;
@@ -98,12 +98,12 @@ html, body {
     background:url(../images/picture1.png) no-repeat center ;
 }
 .image:active{
-	
-	background:url(../images/picture1.png) no-repeat center ;
+    
+    background:url(../images/picture1.png) no-repeat center ;
 }
 
 .imageLabel{
-	position: relative;
+    position: relative;
 }
 #sendImage {
     position: absolute;
@@ -115,10 +115,10 @@ html, body {
     overflow: hidden;
 }
 .fileLabel{
-	position:relative;
+    position:relative;
 }
 #sendFile{
-	position: absolute;
+    position: absolute;
     width:40px;
     cursor:pointer;
     opacity: 0;
@@ -127,15 +127,15 @@ html, body {
     overflow: hidden;
 }
 .file{
-	float:left;
-	cursor: pointer;
-	width:5px;
+    /*float:left;*/
+    cursor: pointer;
+    width:5px;
     border:0px;
     padding: .5em 1.5em .3em;
-	background:url(../images/file1.png) no-repeat center center ;
+    background:url(../images/file1.png) no-repeat center center ;
 }
 .file:hover{
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
     -webkit-border-radius: .3em; 
     -moz-border-radius: .3em;
     border-radius: .3em;
@@ -145,18 +145,18 @@ html, body {
     background:url(../images/file1.png) no-repeat center ;
 }
 .file:active{
-	 background:url(../images/file1.png) no-repeat center ;	
+     background:url(../images/file1.png) no-repeat center ; 
 }
 .clear{
-	float:left;
-	cursor: pointer;
-	width:5px;
+    /*float:left;*/
+    cursor: pointer;
+    width:5px;
     border:0px;
     padding: .5em 1.5em .3em;
-	background:url(../images/clear1.png) no-repeat center center ;
+    background:url(../images/clear1.png) no-repeat center center ;
 }
 .clear:hover{
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
     -webkit-border-radius: .3em; 
     -moz-border-radius: .3em;
     border-radius: .3em;
@@ -167,24 +167,24 @@ html, body {
 }
 .clear:active{ background:url(../images/clear1.png) no-repeat center ;}
 input #chatLog:{
-	float:left;
-	padding: .5em 1.5em .3em;
-	overflow: hidden;
+    float:left;
+    padding: .5em 1.5em .3em;
+    overflow: hidden;
 }
 #messageInput{
-	height:110px;
-	max-height: 110px;
-	font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
-	font-size:14px;
-	margin:5px;
-	overflow:auto;
-	background-color: #fff;
-	cursor:text;
+    height:110px;
+    max-height: 110px;
+    font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+    font-size:14px;
+    margin:5px;
+    overflow:auto;
+    background-color: #fff;
+    cursor:text;
 
 }
  #sendBtn,#closeBtn {
     float:right;
- 	margin-top:10px;
+
     margin-right: 10px;
 }
 
@@ -214,12 +214,12 @@ input #chatLog:{
 
 /* 消息展示样式 */
 .time{
-	color:#778899;
+    color:#778899;
     text-align: center;
     font-size:12px;
 }
 .send{
-	float: right;
+    float: right;
     display: inline-block;
     font-size: 14px;
     font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
@@ -236,26 +236,26 @@ input #chatLog:{
 
 }
 .receive{
-	display:inline-block;
-	background:#4D90FE;
-	color:#FFF;
-	font-size: 14px;
-	font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
-	min-width: 20px;
-	/*
-	为消息框添加阴影
-	 */
-	-moz-box-shadow:3px 3px 2px hsla(0, 0%, 0%, 0.3);  
-	-webkit-box-shadow:3px 3px 2px hsla(0, 0%, 0%, 0.3);  
-	box-shadow:3px 3px 2px hsla(0, 0%, 0%, 0.3);
-	border-radius:5px;
-	padding:7px;
-	max-width: 300px;
-	margin:10px 5px 10px -30px;
+    display:inline-block;
+    background:#4D90FE;
+    color:#FFF;
+    font-size: 14px;
+    font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+    min-width: 20px;
+    /*
+    为消息框添加阴影
+     */
+    -moz-box-shadow:3px 3px 2px hsla(0, 0%, 0%, 0.3);  
+    -webkit-box-shadow:3px 3px 2px hsla(0, 0%, 0%, 0.3);  
+    box-shadow:3px 3px 2px hsla(0, 0%, 0%, 0.3);
+    border-radius:5px;
+    padding:7px;
+    max-width: 300px;
+    margin:10px 5px 10px -30px;
 }
 
 .arrowRight{
-	display: inline-block;
+    display: inline-block;
     float:right;
     width:0;
     height:0;
@@ -267,7 +267,7 @@ input #chatLog:{
     border-color:transparent transparent transparent #80CFE2;
 }
 .arrowLeft{
-	display: inline-block;
+    display: inline-block;
     width:0;
     height:0;
     float:left;
@@ -279,10 +279,10 @@ input #chatLog:{
 }
 
 .clearfloat{
-	clear:both;
+    clear:both;
 }
 .imgRight{
-	width:40px;
+    width:40px;
     height:40px;
     display: inline-block;
     float: right;
@@ -323,4 +323,54 @@ input #chatLog:{
     right:10px;
     border:10px solid transparent;
     border-top-color:#fff;
+}
+
+/* 发送关闭按钮样式控制 */
+.button {
+    display: inline-block;
+    zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+    *display: inline;
+    vertical-align: baseline;
+    margin:5px 2px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 12px/100% Arial, Helvetica, sans-serif;
+    padding: .5em 2em .55em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .5em; 
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+    text-decoration: none;
+}
+.button:active {
+    position: relative;
+    top: 1px;
+}
+
+.btn {
+    color: #d9eef7;
+    border: solid 1px #0076a3;
+    background: #0095cd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+    background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+}
+.btn:hover {
+    background: #007ead;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+    background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
+}
+.btn:active {
+    color: #80bed6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
+    background: -moz-linear-gradient(top,  #0078a5,  #00adee);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
 }

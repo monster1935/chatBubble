@@ -141,7 +141,8 @@
 	function onSendClick(){
 		//获取输入框中的内容
 		var msg=messageInput.innerHTML;
-		if(msg!="" || msg.length!=0){
+		
+		if(msg != "<br>" && msg.length!=0 ){
 
 			//相关发送逻辑
 			
