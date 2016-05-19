@@ -141,7 +141,9 @@
 	function onSendClick(){
 		//获取输入框中的内容
 		var msg=messageInput.innerHTML;
-		if(msg!="" || msg.length!=0){
+
+		//内容不为空的话发送，否则显示提示消息。注意此处IE中获取的内容默认有一个<br>
+		if(msg != "<br>" && msg.length!=0 ){
 
 			//相关发送逻辑
 			
